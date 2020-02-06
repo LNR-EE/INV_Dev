@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"analizador_inverter\startup_stm32f103xb.o"
+"analizador_inverter\delay.o"
+"analizador_inverter\st7920_serial.o"
+"analizador_inverter\main.o"
+"analizador_inverter\stm32f1xx_it.o"
+"analizador_inverter\stm32f1xx_hal_msp.o"
+"analizador_inverter\menumanager.o"
+"analizador_inverter\stm32f1xx_hal_gpio_ex.o"
+"analizador_inverter\stm32f1xx_hal_spi.o"
+"analizador_inverter\stm32f1xx_hal_spi_ex.o"
+"analizador_inverter\stm32f1xx_hal_tim.o"
+"analizador_inverter\stm32f1xx_hal_tim_ex.o"
+"analizador_inverter\stm32f1xx_hal.o"
+"analizador_inverter\stm32f1xx_hal_rcc.o"
+"analizador_inverter\stm32f1xx_hal_rcc_ex.o"
+"analizador_inverter\stm32f1xx_hal_gpio.o"
+"analizador_inverter\stm32f1xx_hal_dma.o"
+"analizador_inverter\stm32f1xx_hal_cortex.o"
+"analizador_inverter\stm32f1xx_hal_pwr.o"
+"analizador_inverter\stm32f1xx_hal_flash.o"
+"analizador_inverter\stm32f1xx_hal_flash_ex.o"
+"analizador_inverter\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Analizador_Inverter\Analizador_Inverter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Analizador_Inverter.map" -o Analizador_Inverter\Analizador_Inverter.axf
